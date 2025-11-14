@@ -14,6 +14,9 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
+# Explicitly set the path to tesseract.exe
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
 # --- Configuration ---
 BASE_URL = "https://jcboseustymca.co.in/Forms/Student/ResultStudents.aspx"
 RESULT_URL = "https://jcboseustymca.co.in/Forms/Student/PrintReportCardNew.aspx"
@@ -201,3 +204,4 @@ if __name__ == "__main__":
     print(f"\n--- Batch processing complete! ---")
     print(f"Check the '{OUTPUT_DIR}' folder for results.")
     print(f"A summary has been saved to '{summary_csv_path}'.")
+
