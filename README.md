@@ -36,6 +36,8 @@
 
 - Python 3.x  
 - Google Tesseract OCR installed and accessible in your system's PATH.
+- https://github.com/Harshitmishra09/resco/blob/main/tesseract-ocr-w64-setup-5.5.0.20241111.exe
+- https://github.com/UB-Mannheim/tesseract/wiki
 
 ### Installation
 
